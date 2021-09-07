@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="WeddingBells" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwVideo" destination="EoK-UV-g98" id="u1B-sE-kCr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EoK-UV-g98">
+                    <rect key="frame" x="0.0" y="88" width="414" height="234"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="EoK-UV-g98" secondAttribute="height" multiplier="414:263" constant="45.650190114068437" id="FRR-Mz-Gbw"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KGf-Yp-Bv5">
+                    <rect key="frame" x="20" y="401" width="374" height="128"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ol8-nE-6F4" userLabel="Venu">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
+                            <color key="backgroundColor" red="0.23591130969999999" green="0.61409795280000001" blue="0.99801009890000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Venue"/>
+                            <connections>
+                                <action selector="onClkVenue:" destination="-1" eventType="touchUpInside" id="BVj-FR-d2Y"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGs-au-2Wf" userLabel="Venu">
+                            <rect key="frame" x="0.0" y="46" width="374" height="36"/>
+                            <color key="backgroundColor" red="0.23591130969999999" green="0.61409795280000001" blue="0.99801009890000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Gallery"/>
+                            <connections>
+                                <action selector="onClkGallery:" destination="-1" eventType="touchUpInside" id="tAS-hg-hEO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeF-IX-yji" userLabel="Venu">
+                            <rect key="frame" x="0.0" y="92" width="374" height="36"/>
+                            <color key="backgroundColor" red="0.23591130969999999" green="0.61409795280000001" blue="0.99801009890000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Comments"/>
+                            <connections>
+                                <action selector="onClkComments:" destination="-1" eventType="touchUpInside" id="kbU-Fo-do2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="KGf-Yp-Bv5" firstAttribute="top" secondItem="EoK-UV-g98" secondAttribute="bottom" constant="79" id="CTQ-iU-Vcz"/>
+                <constraint firstItem="KGf-Yp-Bv5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="J09-Fm-ylu"/>
+                <constraint firstItem="EoK-UV-g98" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cmk-us-l8H"/>
+                <constraint firstItem="EoK-UV-g98" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="oiA-pN-ucU"/>
+                <constraint firstItem="EoK-UV-g98" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="snz-Mz-hwe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KGf-Yp-Bv5" secondAttribute="trailing" constant="20" id="v0o-UG-2uf"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="131.8840579710145" y="104.46428571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
